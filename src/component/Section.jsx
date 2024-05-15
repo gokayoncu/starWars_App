@@ -15,7 +15,7 @@ function Section() {
 
   return (
     <>
-      <a href="home"><img src="./../public/logo.png" alt="logo" /></a>
+      <a href="home"><img src="./../assets/logo.png" alt="logo" /></a>
       <div className='search'>
           <label htmlFor="">Name/Model:
             <input type="text" placeholder='Name/Model'   onChange={(e)=> handleChange(e.target.value)}/>
