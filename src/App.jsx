@@ -19,12 +19,12 @@ function App() {
     <>
       <div className='ships'>
         <Section/>
-        <div className='ship-map' id='home'>
+        <div className='ship-map' >
           {
             newship === undefined || "" || null ? 
             filterShip === undefined || "" ||filterShip.length === 0 ||filterShip.length>9 ||null?
             ships?.map((ship)=>(
-              <User key={ship.model} ship={ship}></User>
+              <User key={ship.model} ship={ship} id='home'></User>
               )): filterShip?.map((filter)=>(
                 <FilterShip key={filter.name} filter={filter}></FilterShip>
               ))

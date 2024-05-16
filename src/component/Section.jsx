@@ -11,11 +11,13 @@ function Section() {
       setFilterShip(ships.filter((item)=>item.name.toUpperCase().trim().includes(newE)))      
     }
   }
-  
+  const backHomepage = () =>{
+    window.location.href = '/'
+  }
 
   return (
     <>
-      <a href="home"><img src="./logo.png" alt="logo" /></a>
+      <a onClick={backHomepage}><img src="./logo.png" alt="logo" /></a>
       <div className='search'>
           <label htmlFor="">Name/Model:
             <input type="text" placeholder='Name/Model'   onChange={(e)=> handleChange(e.target.value)}/>

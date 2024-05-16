@@ -6,9 +6,13 @@ import { FaArrowLeft } from "react-icons/fa";
 
 function ShipDetails() {
   const {shipUrl}= useContext(CounterContext)
+  const backHomepage = () =>{
+    window.location.href = '/'
+  }
+
   return (
     <div className='shipdetail'>
-        <a href="home" className='back-home'><FaArrowLeft className='icon'/></a>
+        <a onClick={backHomepage} className='back-home'><FaArrowLeft className='icon'/></a>
         <div>
           <h3>{shipUrl?.name}</h3>
           <img src="https://cdn.icon-icons.com/icons2/335/PNG/256/Millenium_Falcon_-_02_35432.png" alt="" />

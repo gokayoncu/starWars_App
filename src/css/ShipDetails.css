@@ -7,6 +7,7 @@
     
     .back-home{
         position: absolute;
+        cursor: pointer;
         top:33%;
         left: 20%;
         background-color: #134e70;
